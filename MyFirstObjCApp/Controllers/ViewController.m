@@ -25,6 +25,7 @@
     [self setTitle: @"Planets"];
     
     [[self tableView] registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Planet"];
+    [[self tableView] setTableFooterView: [[UIView alloc] initWithFrame:CGRectZero]];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -45,7 +46,7 @@
     
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"Planet" forIndexPath:indexPath];
     [[cell textLabel] setText: [planet name]];
-    [cell setBackgroundColor: [UIColor whiteColor]];
+    [cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
     return cell;
 }
 

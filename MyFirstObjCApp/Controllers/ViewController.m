@@ -26,6 +26,7 @@
     
     [[self tableView] registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Planet"];
     [[self tableView] setTableFooterView: [[UIView alloc] initWithFrame:CGRectZero]];
+    [[self tableView] setSeparatorInset: UIEdgeInsetsZero];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

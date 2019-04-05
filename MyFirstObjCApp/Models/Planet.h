@@ -1,16 +1,16 @@
 //
-//  AppDelegate.h
+//  Planet.m
 //  MyFirstObjCApp
 //
 //  Created by Gonzalo Exequiel Ibars Ingman on 04/04/2019.
 //  Copyright © 2019 Gonzalo Exequiel Ibars Ingman. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface Planet : NSObject
 
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *summary;
 
 @end
-
